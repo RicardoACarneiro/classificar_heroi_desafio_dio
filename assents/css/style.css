@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --text-base:  #94b6f0;
+    --text-title: #52eaf5;
+    --backgrouund: #0e0d0c;
+    --form-background: #080706;
+    --primary-color: #e7240f;
+}
+body {
+    background: url('../imagen/marvel-heroes-ry37gveveitu64ro.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    background: var(--form-background);
+    border-radius: 10px;
+}
+.box_none{
+    display: none;
+}
+.box_result{
+    display: none;
+    text-align: center;
+    background: var(--form-background);
+    border-radius: 10px;
+    color: var(--text-title);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    padding: 10px;
+}
+legend{
+    color: var(--text-title);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+}
+.box_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+}
+.box_title {
+    color: var(--text-base);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+.box_user {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 12px 24px;
+    width: 334px;
+}
+.box_button {
+    color: var(--form-background);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 12px 24px;
+    width: 200px;
+}
+.box_button:hover {
+    cursor: pointer;
+}
+a {
+    color: var(--form-background);
+    text-decoration: none;
+}

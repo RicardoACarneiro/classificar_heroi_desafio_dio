@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de Nível de Herói</title>
+
+    <link rel="stylesheet" href="./assents/css/style.css">
+
+</head>
+
+<body>
+    <div class="box" id="form">
+        <form class="box_form" onsubmit="return false;">
+            <legend>Consulte o nível do seu herói</legend>
+            <label class="box_title" for="username">Nome do herói:</label>
+            <input class="box_user" type="text" id="username" name="username">
+            <label class="box_title" for="userxp">XP do herói:</label>
+            <input class="box_user" type="text" id="userxp" name="userxp">
+            <input class="box_button" type="submit" value="Consultar" onclick="validarNivel()">
+        </form>
+    </div>
+    <div class="box_result" id="result">
+    
+    </div>
+    
+    <script src="./assents/js/script.js"></script>
+</body>
+
+</html>
